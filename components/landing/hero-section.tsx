@@ -24,7 +24,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image */}
-      <div className="absolute inset-0 -z-0">
+      <div className="absolute inset-0 -z-20">
         <Image
           src="/images/hero-bg.jpg"
           alt="Luxury hotel interior"
