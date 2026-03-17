@@ -1,0 +1,19 @@
+0 verbose cli C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.10.0
+2 info using node@v20.19.2
+3 silly config load:file:C:\Users\asus\AppData\Local\nvm\v20.19.2\node_modules\npm\npmrc
+4 silly config load:file:c:\Users\asus\OneDrive\Desktop\Hotel-Management\.npmrc
+5 silly config load:file:C:\Users\asus\.npmrc
+6 silly config load:file:C:\nvm4w\nodejs\etc\npmrc
+7 verbose title npm view typescript description dist-tags.latest homepage version time
+8 verbose argv "view" "--json" "--" "typescript" "description" "dist-tags.latest" "homepage" "version" "time"
+9 verbose logfile logs-max:10 dir:C:\Users\asus\OneDrive\Desktop\Hotel-Management\.npm-cache\_logs\2026-03-16T14_18_29_069Z-
+10 verbose logfile C:\Users\asus\OneDrive\Desktop\Hotel-Management\.npm-cache\_logs\2026-03-16T14_18_29_069Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET 200 https://registry.npmjs.org/typescript 584ms (cache revalidated)
+13 verbose cwd c:\Users\asus\OneDrive\Desktop\Hotel-Management
+14 verbose os Windows_NT 10.0.26200
+15 verbose node v20.19.2
+16 verbose npm  v11.10.0
+17 verbose exit 0
+18 info ok

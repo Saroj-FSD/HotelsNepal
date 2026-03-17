@@ -1,0 +1,225 @@
+export const featuredHotels = [
+  {
+    id: 1,
+    name: "Azure Skyline Resort",
+    location: "Maldives",
+    price: 450,
+    rating: 4.9,
+    reviews: 2847,
+    image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
+    amenities: ["Pool", "Spa", "Beach", "WiFi"],
+    type: "hotel",
+  },
+  {
+    id: 2,
+    name: "Mountain Haven Lodge",
+    location: "Swiss Alps",
+    price: 320,
+    rating: 4.8,
+    reviews: 1923,
+    image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+    amenities: ["Ski", "Fireplace", "Spa", "Restaurant"],
+    type: "lodge",
+  },
+  {
+    id: 3,
+    name: "Urban Oasis Hotel",
+    location: "Tokyo, Japan",
+    price: 280,
+    rating: 4.7,
+    reviews: 3156,
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    amenities: ["Gym", "Bar", "Restaurant", "WiFi"],
+    type: "hotel",
+  },
+  {
+    id: 4,
+    name: "Coastal Retreat Villa",
+    location: "Santorini, Greece",
+    price: 520,
+    rating: 4.9,
+    reviews: 2341,
+    image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+    amenities: ["Pool", "Sea View", "Breakfast", "WiFi"],
+    type: "hotel",
+  },
+]
+
+export const featuredRestaurants = [
+  {
+    id: 1,
+    name: "Sakura Fine Dining",
+    cuisine: "Japanese",
+    location: "Tokyo",
+    price: "$$$$",
+    rating: 4.9,
+    reviews: 1847,
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
+    features: ["Michelin Star", "Private Rooms", "Omakase"],
+    type: "restaurant",
+  },
+  {
+    id: 2,
+    name: "La Bella Vista",
+    cuisine: "Italian",
+    location: "Rome",
+    price: "$$$",
+    rating: 4.8,
+    reviews: 2156,
+    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80",
+    features: ["Rooftop", "Wine Cellar", "Live Music"],
+    type: "restaurant",
+  },
+  {
+    id: 3,
+    name: "The Golden Spice",
+    cuisine: "Indian",
+    location: "Mumbai",
+    price: "$$",
+    rating: 4.7,
+    reviews: 1823,
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80",
+    features: ["Vegetarian", "Outdoor Seating", "Buffet"],
+    type: "restaurant",
+  },
+  {
+    id: 4,
+    name: "Azure Seafood Grill",
+    cuisine: "Seafood",
+    location: "Sydney",
+    price: "$$$",
+    rating: 4.8,
+    reviews: 1567,
+    image: "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?w=800&q=80",
+    features: ["Ocean View", "Fresh Catch", "Bar"],
+    type: "restaurant",
+  },
+]
+
+export const trendingCafes = [
+  {
+    id: 1,
+    name: "Bloom Coffee House",
+    specialty: "Artisan Coffee",
+    location: "Melbourne",
+    price: "$",
+    rating: 4.8,
+    reviews: 982,
+    image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80",
+    features: ["Specialty Beans", "Pastries", "WiFi"],
+    type: "cafe",
+  },
+  {
+    id: 2,
+    name: "The Reading Room",
+    specialty: "Tea & Books",
+    location: "London",
+    price: "$$",
+    rating: 4.7,
+    reviews: 756,
+    image: "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80",
+    features: ["Library", "Afternoon Tea", "Quiet Zone"],
+    type: "cafe",
+  },
+  {
+    id: 3,
+    name: "Sunrise Espresso",
+    specialty: "Italian Coffee",
+    location: "Milan",
+    price: "$",
+    rating: 4.9,
+    reviews: 1234,
+    image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80",
+    features: ["Authentic", "Quick Service", "Terrace"],
+    type: "cafe",
+  },
+]
+
+export const popularDestinations = [
+  {
+    id: 1,
+    name: "Paris",
+    country: "France",
+    properties: 2847,
+    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&q=80",
+  },
+  {
+    id: 2,
+    name: "Bali",
+    country: "Indonesia",
+    properties: 1923,
+    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80",
+  },
+  {
+    id: 3,
+    name: "New York",
+    country: "USA",
+    properties: 4521,
+    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&q=80",
+  },
+  {
+    id: 4,
+    name: "Dubai",
+    country: "UAE",
+    properties: 1847,
+    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80",
+  },
+  {
+    id: 5,
+    name: "Tokyo",
+    country: "Japan",
+    properties: 3156,
+    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+  },
+  {
+    id: 6,
+    name: "Sydney",
+    country: "Australia",
+    properties: 2341,
+    image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&q=80",
+  },
+]
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Sarah Mitchell",
+    role: "Travel Blogger",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80",
+    content: "Luxestay transformed my travel experience. The curated selection of hotels and the seamless booking process made my honeymoon absolutely perfect.",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "James Chen",
+    role: "Business Executive",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80",
+    content: "As someone who travels frequently for work, Luxestay's premium hotel recommendations and instant booking have saved me countless hours.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Elena Rodriguez",
+    role: "Food Enthusiast",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&q=80",
+    content: "The restaurant discovery feature is incredible! Found hidden gems I would never have discovered on my own. Truly a foodie's paradise.",
+    rating: 5,
+  },
+]
+
+export const stats = [
+  { label: "Properties", value: "50K+", suffix: "" },
+  { label: "Cities", value: "200+", suffix: "" },
+  { label: "Happy Guests", value: "2M+", suffix: "" },
+  { label: "5-Star Reviews", value: "500K+", suffix: "" },
+]
+
+export const amenitiesOptions = [
+  "WiFi", "Pool", "Spa", "Gym", "Restaurant", "Bar", "Parking", 
+  "Pet Friendly", "Beach Access", "Mountain View", "Room Service", "Breakfast"
+]
+
+export const cuisineTypes = [
+  "Italian", "Japanese", "Indian", "Mexican", "French", "Chinese", 
+  "Thai", "Mediterranean", "American", "Seafood", "Vegetarian", "Vegan"
+]

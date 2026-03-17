@@ -1,0 +1,12 @@
+0 verbose cli C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.10.0
+2 info using node@v20.19.2
+3 silly config load:file:C:\Users\asus\AppData\Local\nvm\v20.19.2\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\asus\OneDrive\Desktop\Hotel-Management\.npmrc
+5 silly config load:file:C:\Users\asus\.npmrc
+6 silly config load:file:C:\nvm4w\nodejs\etc\npmrc
+7 verbose title npm run dev
+8 verbose argv "run" "dev"
+9 verbose logfile logs-max:10 dir:C:\Users\asus\OneDrive\Desktop\Hotel-Management\.npm-cache\_logs\2026-03-16T15_24_02_818Z-
+10 verbose logfile C:\Users\asus\OneDrive\Desktop\Hotel-Management\.npm-cache\_logs\2026-03-16T15_24_02_818Z-debug-0.log
+11 silly logfile done cleaning log files
