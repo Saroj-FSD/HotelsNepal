@@ -30,7 +30,7 @@ export default function LodgeDetailPage({ params }: { params: Promise<{ id: stri
   const [liked, setLiked] = useState(false)
   const [guests, setGuests] = useState(2)
 
-  const lodge = lodges.find(l => l.id === id) || lodges[0]
+  const lodge = lodges.find(l => l.id === parseInt(id)) || lodges[0]
   
   const images = [
     "https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=1200&h=800&fit=crop",
@@ -48,9 +48,9 @@ export default function LodgeDetailPage({ params }: { params: Promise<{ id: stri
   ]
 
   const cabinTypes = [
-    { name: "Standard Cabin", capacity: "2 guests", price: lodge.pricePerNight, features: ["Queen Bed", "Mountain View", "Private Bathroom"] },
-    { name: "Deluxe Cabin", capacity: "4 guests", price: lodge.pricePerNight + 80, features: ["King Bed", "Fireplace", "Kitchen", "Deck"] },
-    { name: "Family Lodge", capacity: "6 guests", price: lodge.pricePerNight + 150, features: ["2 Bedrooms", "Full Kitchen", "Living Area", "Hot Tub"] },
+    { name: "Standard Cabin", capacity: "2 guests", price: lodge.price, features: ["Queen Bed", "Mountain View", "Private Bathroom"] },
+    { name: "Deluxe Cabin", capacity: "4 guests", price: lodge.price + 80, features: ["King Bed", "Fireplace", "Kitchen", "Deck"] },
+    { name: "Family Lodge", capacity: "6 guests", price: lodge.price + 150, features: ["2 Bedrooms", "Full Kitchen", "Living Area", "Hot Tub"] },
   ]
 
   const reviews = [
@@ -173,11 +173,11 @@ export default function LodgeDetailPage({ params }: { params: Promise<{ id: stri
               <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-6">
                 <div className="flex items-center gap-1">
                   <Users className="w-4 h-4" />
-                  <span>Up to {lodge.capacity} guests</span>
+                  <span>Up to 6 guests</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <TreePine className="w-4 h-4" />
-                  <span>{lodge.activities.length}+ Activities</span>
+                  <span>{activities.length}+ Activities</span>
                 </div>
               </div>
 
@@ -321,7 +321,7 @@ export default function LodgeDetailPage({ params }: { params: Promise<{ id: stri
             >
               <div className="text-center">
                 <div className="text-sm text-muted-foreground">Starting from</div>
-                <div className="text-3xl font-bold text-gradient">${lodge.pricePerNight}</div>
+                <div className="text-3xl font-bold text-gradient">${lodge.price}</div>
                 <p className="text-sm text-muted-foreground">per night</p>
               </div>
 
@@ -364,8 +364,8 @@ export default function LodgeDetailPage({ params }: { params: Promise<{ id: stri
 
               <div className="pt-4 border-t border-border space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">${lodge.pricePerNight} x 3 nights</span>
-                  <span>${lodge.pricePerNight * 3}</span>
+                  <span className="text-muted-foreground">${lodge.price} x 3 nights</span>
+                  <span>${lodge.price * 3}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Service fee</span>
@@ -373,7 +373,7 @@ export default function LodgeDetailPage({ params }: { params: Promise<{ id: stri
                 </div>
                 <div className="flex justify-between font-semibold text-base pt-2 border-t border-border">
                   <span>Total</span>
-                  <span>${lodge.pricePerNight * 3 + 45}</span>
+                  <span>${lodge.price * 3 + 45}</span>
                 </div>
               </div>
 

@@ -115,9 +115,9 @@ export default function SearchPage() {
       
       // Amenities filter
       if (selectedAmenities.length > 0) {
-        const propertyAmenities = property.amenities || property.features || []
+        const propertyAmenities = (property as any).amenities || (property as any).features || []
         const hasAllAmenities = selectedAmenities.every(a => 
-          propertyAmenities.some(pa => pa.toLowerCase().includes(a.toLowerCase()))
+          propertyAmenities.some((pa: string) => pa.toLowerCase().includes(a.toLowerCase()))
         )
         if (!hasAllAmenities) return false
       }

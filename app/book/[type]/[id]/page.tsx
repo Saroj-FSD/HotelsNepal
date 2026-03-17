@@ -14,7 +14,7 @@ import { Badge } from "@/components/ui/badge"
 import { Textarea } from "@/components/ui/textarea"
 import { useAuthStore } from "@/lib/auth-store"
 import { useBookingStore } from "@/lib/booking-store"
-import { hotels, restaurants, lodges, cafes } from "@/lib/data"
+import { featuredHotels, featuredRestaurants, trendingCafes, lodges } from "@/lib/data"
 
 export default function BookingPage({ params }: { params: Promise<{ type: string; id: string }> }) {
   const { type, id } = use(params)
@@ -38,13 +38,13 @@ export default function BookingPage({ params }: { params: Promise<{ type: string
   const getProperty = () => {
     switch (type) {
       case 'hotel':
-        return hotels.find(h => h.id === id)
+        return featuredHotels.find(h => String(h.id) === id)
       case 'restaurant':
-        return restaurants.find(r => r.id === id)
+        return featuredRestaurants.find(r => String(r.id) === id)
       case 'lodge':
-        return lodges.find(l => l.id === id)
+        return lodges.find(l => String(l.id) === id)
       case 'cafe':
-        return cafes.find(c => c.id === id)
+        return trendingCafes.find(c => String(c.id) === id)
       default:
         return null
     }

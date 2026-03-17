@@ -12,7 +12,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { cafes } from "@/lib/data"
+import { trendingCafes } from "@/lib/data"
 
 const amenityIcons: Record<string, React.ElementType> = {
   "Free WiFi": Wifi,
@@ -28,7 +28,7 @@ export default function CafeDetailPage({ params }: { params: Promise<{ id: strin
   const [currentImage, setCurrentImage] = useState(0)
   const [liked, setLiked] = useState(false)
 
-  const cafe = cafes.find(c => c.id === id) || cafes[0]
+  const cafe = trendingCafes.find(c => c.id === Number(id)) || trendingCafes[0]
   
   const images = [
     "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&h=800&fit=crop",
@@ -148,7 +148,7 @@ export default function CafeDetailPage({ params }: { params: Promise<{ id: strin
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <Badge className="bg-primary/20 text-primary border-0">Cafe</Badge>
-                    {cafe.isOpen && <Badge className="bg-green-500/20 text-green-500 border-0">Open Now</Badge>}
+                    <Badge className="bg-green-500/20 text-green-500 border-0">Open Now</Badge>
                   </div>
                   <h1 className="text-3xl md:text-4xl font-bold mb-2">{cafe.name}</h1>
                   <div className="flex items-center gap-2 text-muted-foreground">
@@ -218,7 +218,7 @@ export default function CafeDetailPage({ params }: { params: Promise<{ id: strin
                 >
                   <h3 className="text-xl font-semibold mb-4">Amenities</h3>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    {cafe.amenities.map((amenity, idx) => {
+                    {cafe.features.map((amenity, idx) => {
                       const Icon = amenityIcons[amenity] || Coffee
                       return (
                         <div key={idx} className="flex items-center gap-3 p-3 rounded-xl bg-secondary/30">
@@ -275,7 +275,7 @@ export default function CafeDetailPage({ params }: { params: Promise<{ id: strin
               className="glass-card-strong p-6 sticky top-24 space-y-6"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-gradient mb-1">{cafe.priceRange}</div>
+                <div className="text-3xl font-bold text-gradient mb-1">{cafe.price}</div>
                 <p className="text-sm text-muted-foreground">Average spend per person</p>
               </div>
 
